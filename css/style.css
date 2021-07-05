@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+      
+}
+html{
+    scroll-behavior: smooth;
+}
+body,h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+body{
+    background: rgb(0, 0, 0, .8);
+}
+
+a,span,a{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* header top css */
+.header-area{
+   
+}
+
+.header-top{
+    text-align: center;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* border: 1px solid #fff; */
+}
+.t-info{
+    width: 33.33%;
+    float: left;
+
+}
+.t-info ul{}
+.t-info ul li{
+    display: inline-block;   
+}
+.t-info ul li span{
+    margin-right: 5px;
+    font-size: 15px;
+    color: #29a7e9;
+}
+.t-info ul li a{
+    display: block;
+    margin: 20px 20px;
+    transition: .4s;
+    opacity: .5;
+}
+.t-info ul li a:hover{
+    color:#47C6F8;
+}
+
+.t-right-social ul li a{
+    margin: 20px 8px;
+    display: block;
+    color: #ddd;
+    transition: .4s;
+    opacity: 1;
+    
+}
+.t-right-social ul li a:hover{
+    color: #29a7e9 !important;
+}
+
+/* header botttom menu css*/
+.header-bottom{
+    background: white !important;
+    padding: 6px 0;
+}
+.header-logo{
+    width: 20%;
+    float: left;
+}
+.header-logo a {
+    font-size: 34px;
+    margin-top: 8px;
+    display: inline-block;
+    color: #000;
+}
+
+.header-menu{
+    width: 80%;
+    float: right;
+}
+.header-menu ul{
+    text-align: right;
+}
+.header-menu ul li{
+    display: inline-block;
+}
+.header-menu ul li a{
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 16px;
+    color: #000;
+    font-weight:600;
+    position: relative;
+}
+.header-menu ul li:last-child a{
+    margin-right: 0;
+}
+.header-menu ul li:first-child a{
+    color: #29a7e9;
+}
+.header-menu ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #29a7e9;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+
+}
+.header-menu ul li a:hover::after{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* banner css start*/
+
+.banner-section{
+    background: url(../images/home-bg.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 999;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: -9;
+}
+.banner-text{
+    width: 60%;
+    margin: 120px auto;
+    text-align: center;
+    
+}
+.banner-text h1 {
+    font-size: 68px;
+    font-weight: 300;
+}
+.banner-text span{
+    font-weight: 800;
+    color: #29a7e9;
+}
+.banner-text p {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 20px 0;
+    color: wheat;
+}
+.banner-text a {
+    width:180px;
+    display: inline-block;
+    height: 60px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: .5s;
+    margin-top: 50px;
+
+}
+.banner-text a:hover{
+    background: #29a7e9;
+    color: white;
+    border: 1px solid #29a7e9;
+}
+
+/* what we do section css start*/
+.what-we-do{
+    padding: 80px 0;
+}
+.title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+.title span{
+    color: #29a7e9;
+    font-weight: 800;
+}
+.our-s-item{
+    width: 31.33%;
+    float: left;
+    /* border: 1px solid white; */
+    overflow: hidden;
+    margin: 10px 1%;
+}
+.icon{
+    width: 20%;
+    float: left;
+    margin-right: 2%;
+}
+.icon i{
+   width: 60px;
+   height: 60px;
+   line-height: 60px;
+   text-align: center;
+   font-size: 20px;
+
+   border: 1px solid white;
+}
+.our-s-item:hover .icon i{
+    border-color: #29a7e9;
+}
+.s-content{
+    width: 78%;
+    float: right;
+    margin-top: 20px;
+}
+.s-content h2 {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+.s-content p {
+    color: #ddd;
+    line-height: 25px;
+}
+.s-content p a {
+    color: #29a7e9;
+}
+
+/* what we do section css end*/
+
+
+/* team css start */
+.team-section{
+    padding: 80px 0;
+}
+
+.team-member{
+    width:23%;
+    float: left;
+    box-shadow: 0 0 10px 1px rgb(255, 255, 255, .2);
+    margin: 10px 1%;
+    transition: .5s;
+    cursor: pointer;
+}
+.team-member:hover{
+    opacity: .5;
+    transform: translateY(-10px);
+    color: white;
+}
+.team-img{
+    margin-bottom: 20px;
+}
+.team-img img{
+    width: 100%;
+}
+
+.team-text{
+    padding: 0 20px 40px;
+}
+.team-text h3{
+    font-weight: 400;
+}
+.team-text h4{
+    color: #29a7e9;
+    margin: 10px 0;
+}
+.team-text p{
+    color: #ddd;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+/* our think item css */
+
+.our-things{
+    padding: 80px 0;
+}
+.think-item{
+    width: 33.33%;
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+    transition: .5s;
+}
+.think-item:hover{
+   background: #505050;
+}
+.think-item:hover .think-content p{
+   color: white;
+}
+.common-bg{
+    background: #505050;
+}
+.cmn-p p{
+    color: white !important;
+}
+.item-icon{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 40px;
+}
+.think-content{}
+
+.think-content h2{
+    font-size: 20px;
+    color: #29a7e9;
+    margin: 20px 0 25px;
+}
+.think-content p{
+    font-size: 15px;
+    color: #ddd;
+    line-height: 25px;
+}
+
+/* portfolio css start */
+.portfolio{
+    padding: 80px 0;
+}
+.portfolio-gallery{
+    width: 25%;
+    float: left;
+    /* border: 1px solid white; */
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio-img{
+    position: relative;   
+}
+.portfolio-img img{
+    width: 100%;   
+}
+
+.inner-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 0;
+    display: block;
+    background:rgba(40, 164, 231, .8);
+    padding: 30px 20px;
+    box-sizing: border-box; 
+    visibility: hidden; 
+    opacity: 0;
+    transition: .5s;
+}
+.portfolio-gallery:hover .inner-text{
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+
+}
+.inner-text p{
+    margin: 20px 0 10px;
+    font-size: 15px;
+}
+.inner-text button{
+    padding: 9px 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* portfolio css end */
+
+
+/* contact me css start*/
+
+.contact-us{}
+.contact-form{
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+.contact-form label{
+    text-transform: uppercase;
+}
+.contact-form input{
+    height: 50px;
+    background: transparent;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+.contact-form input,textarea:focus{
+    outline: #29a7e9;
+    border: 1px solid #29a7e9;
+}
+.contact-form .w-100{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #29a7e9;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.contact-form button{
+    height: 50px;
+    background: #29a7e9 !important;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .5s;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    background: transparent !important;
+}
+
+/* contact right social css */
+.contact-right-social{
+    width: 48%;
+    float: right;
+    margin-top: 50px;
+    margin-left: 2%;
+}
+.contact-right-social h2{
+    font-size: 22px;
+}
+.contact-right-social p{
+    color: #606060;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.adress ul{
+    list-style: none;
+    border-bottom: 1px solid wheat;
+    margin: 20px 0;
+}
+.adress ul li{
+    margin: 10px 0;
+}
+.adress ul li i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid wheat;
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+
+.social-icon {}
+.social-icon ul{}
+.social-icon ul li span{
+    margin-right: 15px;
+    font-weight: 700;
+}
+.social-icon ul li{
+    display: inline-block;
+}
+.social-icon ul li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid wheat;
+    transition: .5s;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.social-icon ul li a:hover{
+   background: #29a7e9;
+   border: 1px solid #29a7e9;
+}
+/* contact me css end*/
+
+/* footer css */
+footer{
+    background: #606060;
+    padding: 25px 0;
+}
+.footer-text{
+    text-align: center;
+    
+}
+.footer-text p{
+    color: #29a7e9 !important;
+}
